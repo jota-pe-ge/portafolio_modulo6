@@ -1,0 +1,222 @@
+/* Variantes de Color */
+:root{
+    --primary-color: #003096;
+    --secondary-color: #162441;
+    --bg-white: #F5F5F5;
+    --bg-white-nav: #FFFFFF;
+    --bt-bck-hover: #182849;
+
+}
+
+.navbar-expand-lg {
+    background-color: var(--bg-white-nav);
+    margin-bottom: 6em;
+}
+
+.navbar-nav {
+    gap: 8px;
+}
+
+body {
+    background-color: var(--bg-white);
+    padding-bottom: 2em;
+}
+
+main {
+    text-align: left;
+    /* padding-left: 8em;
+    padding-right: 8em; */
+}
+
+section {
+    margin-top: 6em;
+    margin-bottom: 6em;
+}
+
+.flex-column {
+    gap: 10px;
+    margin-left: 6em;
+}
+
+.formulario {
+    background-color: var(--bg-white-nav);
+    /* margin-top: -0.25rem !important; */
+}
+
+.contacto {
+    padding: 10rem 0 10rem 0;
+}
+
+h1{ 
+    color: var(--primary-color);
+    font-family: Poppins;
+    font-size: 217.44px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 195.696px; /* 90% */
+    letter-spacing: -20px;
+}
+
+h2{
+    color: var(--secondary-color);
+    font-family: Poppins;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 66px */
+    letter-spacing: -2px;
+}
+
+h3{
+    color: var(--secondary-color);
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+}
+
+h4{
+    color: var(--secondary-color);
+    font-family: Poppins;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 42px */
+    letter-spacing: -2px;
+}
+
+p{
+    color: var(--secondary-color);
+    font-family: Jost;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 33.6px */
+}
+
+.text-about {
+    color: var(--secondary-color);
+    font-family: Jost;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 120%; /* 33.6px */
+}
+
+.btn-primary {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bg-white);
+  --bs-btn-bg: var(--primary-color);
+  --bs-btn-border-color: var(--bd-violet-bg);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: var(--bt-bck-hover);
+  --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
+  --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
+}
+
+.btn-outline-primary {
+    border-radius: 16777200px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    color: var(--secondary-color);
+    --bs-btn-hover-bg: var(--primary-color);
+    --bs-btn-hover-border-color: var(--primary-color);
+}
+
+.btn-info {
+    background: #000;
+    color: var(--bg-white);
+    --bs-btn-border-color: #000;
+    --bs-btn-hover-bg: var(--bg-white-nav);
+    --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
+
+
+
+}
+
+.aside-1 {
+  background: var(--bg-white);
+
+}
+
+.aside-2 {
+    background: var(--bg-white);
+}
+
+.aside-3 {
+    background: var(--bg-white);
+}
+
+.aside-4 {
+    background: var(--bg-white)
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; } 
+  .aside-2 { order: 2; }
+  .aside-3 { order: 3; }
+  .aside-4 { order: 4; }
+}
+
+  /* Styles for tablets like iPad (Portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    h1 {
+    color: var(--primary-color);
+    font-family: Poppins;
+    font-size: 140px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150px; /* 90% */
+    letter-spacing: -12px;
+    }
+
+    h2{
+    color: var(--secondary-color);
+    font-family: Poppins;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 66px */
+    letter-spacing: -2px;    
+    }
+
+
+
+
+}
+
+
+/* Styles applied only when screen width is 768px or less */
+@media screen and (max-width: 768px) {
+
+    h1 {
+    color: var(--primary-color);
+    font-family: Poppins;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 80px; /* 90% */
+    letter-spacing: -5px;
+    }
+
+    h2{
+    color: var(--secondary-color);
+    font-family: Poppins;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 66px */
+    letter-spacing: -2px;    
+    }
+  
+}
+
